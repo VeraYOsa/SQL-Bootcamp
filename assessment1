@@ -1,18 +1,14 @@
-/Question 1
-
 SELECT customer_id, staff_id, sum(amount)
 FROM payment
 WHERE staff_id = '2'
 GROUP BY customer_id, staff_id
 HAVING sum(amount) >= 110
 
-/Question 2
 
 SELECT DISTINCT (COUNT(*))
 FROM film
 WHERE title LIKE 'J%'
 
-/Question 3
 
 SELECT first_name, last_name
 FROM customer
